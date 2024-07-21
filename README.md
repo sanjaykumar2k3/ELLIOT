@@ -18,8 +18,8 @@ Elliot is a Python tool designed to test web applications for common vulnerabili
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/sanjaykumar2k3/elliot.git
-    cd elliot
+    https://github.com/sanjaykumar2k3/ELLIOT.git
+    cd ELLIOT
     ```
 
 2. Install the required libraries:
@@ -29,14 +29,12 @@ Elliot is a Python tool designed to test web applications for common vulnerabili
 
 ## Usage
 
-1. Open the `main.py` file and modify the `params` dictionary in the `main` function to match the parameters of the web application you are testing.
-
-2. Run the script:
+1. Run the script:
     ```sh
-    python main.py
+    python ELLIOT.py
     ```
 
-3. Follow the prompts to enter the URL of the page to test and select the tests to perform.
+2. Follow the prompts to enter the URL of the page to test and select the tests to perform.
 
 ## Example
 
