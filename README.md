@@ -1,45 +1,43 @@
-# Elliot
+# ELLIOT - Vulnerability Testing Tool
 
-Elliot is a Python tool designed to test web applications for common vulnerabilities such as SQL Injection, OS Command Injection, File Upload Vulnerability, and Cross-Site Scripting (XSS).
+ELLIOT is a multi-threaded vulnerability testing tool designed to identify potential security issues in web applications. It supports testing for SQL Injection, OS Command Injection, File Upload Vulnerability, and Cross-Site Scripting (XSS).
 
 ## Features
 
-- **SQL Injection**: Detects SQL Injection vulnerabilities by sending malicious payloads.
-- **OS Command Injection**: Detects OS Command Injection vulnerabilities by sending command injection payloads.
-- **File Upload Vulnerability**: Tests for file upload vulnerabilities by uploading various types of malicious files.
-- **Cross-Site Scripting (XSS)**: Detects XSS vulnerabilities by injecting scripts and other malicious payloads.
+- **SQL Injection Testing**
+- **OS Command Injection Testing**
+- **File Upload Vulnerability Testing**
+- **Cross-Site Scripting (XSS) Testing**
 
 ## Requirements
 
 - Python 3.x
 - `requests` library
 
-## Installation
-
-1. Clone the repository:
-    ```sh
-    https://github.com/sanjaykumar2k3/ELLIOT.git
-    cd ELLIOT
-    ```
-
-2. Install the required libraries:
-    ```sh
-    pip install requests
-    ```
-
-## Usage
-
-1. Run the script:
-    ```sh
-    python ELLIOT.py
-    ```
-
-2. Follow the prompts to enter the URL of the page to test and select the tests to perform.
-
-## Example
+Install the `requests` library using pip if you haven't already:
 
 ```sh
-Enter the URL of the page to test: http://example.com/vulnerable_page
+pip install requests
+
+Usage
+
+Clone the repository:
+sh
+git clone https://github.com/sanjaykumar2k3/elliot.git
+cd elliot
+Create a payload file for each type of test you want to perform. For example, sql_payloads.txt for SQL Injection, os_command_payloads.txt for OS Command Injection, file_upload_payloads.txt for File Upload, and xss_payloads.txt for XSS.
+
+
+Run the program:
+sh
+python elliot.py
+Follow the prompts to enter the URL and select the tests to perform. You will be asked to provide the filenames for the payloads. Ensure the files are in the same directory or provide the full path.
+Example
+
+
+
+-----------------------ELLIOT-----------------------
+Enter the URL of the page to test: http://example.com
 
 Select tests to perform:
 1. SQL Injection
@@ -48,10 +46,18 @@ Select tests to perform:
 4. Cross-Site Scripting (XSS)
 Enter the numbers of the tests to perform, separated by commas (e.g., 1,3,4): 1,4
 
+Enter the filename or directory for SQL Injection payloads: sql_payloads.txt
+
 Testing SQL Injection...
 Potential SQL Injection found with payload: ' OR '1'='1
-Response: <html>...</html>
+Response: ...
+
+Enter the filename or directory for XSS payloads: xss_payloads.txt
 
 Testing Cross-Site Scripting (XSS)...
 Potential XSS found with payload: <script>alert(1)</script>
-Response snippet: <html>...</html>
+Response snippet: ...
+Exit
+
+You can exit the program at any prompt by typing exit.
+
