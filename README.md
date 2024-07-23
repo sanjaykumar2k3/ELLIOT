@@ -22,21 +22,21 @@ pip install requests
 Usage
 
 Clone the repository:
-```sh
+
 git clone https://github.com/sanjaykumar2k3/elliot.git
 cd elliot
 
 Create a payload file for each type of test you want to perform. For example, sql_payloads.txt for SQL Injection, os_command_payloads.txt for OS Command Injection, file_upload_payloads.txt for File Upload, and xss_payloads.txt for XSS.
 
 Run the program:
-```sh
+
 python elliot.py
 
 Follow the prompts to enter the URL and select the tests to perform. You will be asked to provide the filenames for the payloads. Ensure the files are in the same directory or provide the full path.
 Example
 
 
-```sh
+
 -----------------------ELLIOT-----------------------
 Enter the URL of the page to test: http://example.com
 
